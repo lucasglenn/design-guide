@@ -1,0 +1,189 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 30px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+/* .sidebar {
+  display: none;
+} */
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+	padding-top: 0px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #fff;
+    border-right: 0px solid #eee;
+  }
+	.hide {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 767px){
+	.sidebar {
+		margin-top:0px;
+	}
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #0094b2;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #004f65;
+  /* background-color: #acebfa; */
+	padding: 10px 20px 10px 20px;
+	font-weight: 700;
+}
+
+.nav-sidebar > li > a:hover {
+	background-color: #fff;
+}
+
+.nav-sidebar > li > a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+	padding-top: 0px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+/* Navbar settings */
+/*
+.navbar {
+	background: none;
+}
+
+@media (max-width:767px) {
+	.navbar {
+		background-color: #f6f5f2;
+		height: 75px;
+		border-bottom: 1px #cbc7bf solid;
+	}
+}
+*/
+
+.fglogo {
+	width: 70px;
+	margin: 0px 0px 15px 0px;
+}
+
+/* Typography */
+
+body {
+	font-family: lato, Helvetica, Arial, "sans-serif";
+	line-height: 175%;
+}
+
+h1 {
+	font-weight: 200;
+	color: #00b6d4;
+}
+
+h2 {
+	font-weight: 200;
+	color: #0094b2;
+}
+
+h3 {
+	font-weight: 300;
+	color: #006B89;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: .15em;
+	color: #004F65;
+	font-size: 1.6rem;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .15em;
+	color: #004F65;
+	font-size: 1.33rem;
+	padding-top: 18px;
+}
